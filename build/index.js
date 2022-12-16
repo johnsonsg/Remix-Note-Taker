@@ -34,7 +34,7 @@ var entry_server_exports = {};
 __export(entry_server_exports, {
   default: () => handleRequest
 });
-var import_stream = require("stream"), import_node = require("@remix-run/node"), import_react = require("@remix-run/react"), import_isbot = __toESM(require("isbot")), import_server = require("react-dom/server"), import_jsx_runtime = require("react/jsx-runtime"), ABORT_DELAY = 5e3;
+var import_stream = require("stream"), import_node = require("@remix-run/node"), import_react = require("@remix-run/react"), import_isbot = __toESM(require("isbot")), import_server = require("react-dom/server"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), ABORT_DELAY = 5e3;
 function handleRequest(request, responseStatusCode, responseHeaders, remixContext) {
   return (0, import_isbot.default)(request.headers.get("user-agent")) ? handleBotRequest(
     request,
@@ -51,10 +51,14 @@ function handleRequest(request, responseStatusCode, responseHeaders, remixContex
 function handleBotRequest(request, responseStatusCode, responseHeaders, remixContext) {
   return new Promise((resolve, reject) => {
     let didError = !1, { pipe, abort } = (0, import_server.renderToPipeableStream)(
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.RemixServer, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react.RemixServer, {
         context: remixContext,
         url: request.url
-      }),
+      }, void 0, !1, {
+        fileName: "app/entry.server.jsx",
+        lineNumber: 41,
+        columnNumber: 7
+      }, this),
       {
         onAllReady() {
           let body = new import_stream.PassThrough();
@@ -79,10 +83,14 @@ function handleBotRequest(request, responseStatusCode, responseHeaders, remixCon
 function handleBrowserRequest(request, responseStatusCode, responseHeaders, remixContext) {
   return new Promise((resolve, reject) => {
     let didError = !1, { pipe, abort } = (0, import_server.renderToPipeableStream)(
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.RemixServer, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react.RemixServer, {
         context: remixContext,
         url: request.url
-      }),
+      }, void 0, !1, {
+        fileName: "app/entry.server.jsx",
+        lineNumber: 82,
+        columnNumber: 7
+      }, this),
       {
         onShellReady() {
           let body = new import_stream.PassThrough();
@@ -117,156 +125,352 @@ __export(root_exports, {
 var import_react3 = require("@remix-run/react");
 
 // app/styles/main.css
-var main_default = "/build/_assets/main-MUQ54GBT.css";
+var main_default = "/build/_assets/main-7P2LKXKK.css";
 
 // app/components/Navigtion/MainNavigation.jsx
-var import_react2 = require("@remix-run/react"), import_jsx_runtime2 = require("react/jsx-runtime"), MainNavigation = () => /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("nav", {
+var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), MainNavigation = () => /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("nav", {
   id: "main-navigation",
-  children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("ul", {
+  children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("ul", {
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", {
         className: "nav-item",
-        children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.NavLink, {
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.NavLink, {
           to: "/",
           children: "Home"
-        })
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", {
+        }, void 0, !1, {
+          fileName: "app/components/Navigtion/MainNavigation.jsx",
+          lineNumber: 8,
+          columnNumber: 11
+        }, this)
+      }, void 0, !1, {
+        fileName: "app/components/Navigtion/MainNavigation.jsx",
+        lineNumber: 7,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", {
         className: "nav-item",
-        children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.NavLink, {
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.NavLink, {
           to: "/notes",
           children: "My Notes"
-        })
-      })
+        }, void 0, !1, {
+          fileName: "app/components/Navigtion/MainNavigation.jsx",
+          lineNumber: 11,
+          columnNumber: 11
+        }, this)
+      }, void 0, !1, {
+        fileName: "app/components/Navigtion/MainNavigation.jsx",
+        lineNumber: 10,
+        columnNumber: 9
+      }, this)
     ]
-  })
-}), MainNavigation_default = MainNavigation;
+  }, void 0, !0, {
+    fileName: "app/components/Navigtion/MainNavigation.jsx",
+    lineNumber: 6,
+    columnNumber: 7
+  }, this)
+}, void 0, !1, {
+  fileName: "app/components/Navigtion/MainNavigation.jsx",
+  lineNumber: 5,
+  columnNumber: 5
+}, this), MainNavigation_default = MainNavigation;
 
 // app/root.jsx
-var import_jsx_runtime3 = require("react/jsx-runtime"), meta = () => ({
+var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime"), meta = () => ({
   charset: "utf-8",
   title: "New Remix App",
   viewport: "width=device-width,initial-scale=1"
 });
 function App() {
-  return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("html", {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("html", {
     lang: "en",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("head", {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("head", {
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Meta, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Links, {})
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Meta, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 26,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Links, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 27,
+            columnNumber: 9
+          }, this)
         ]
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("body", {
+      }, void 0, !0, {
+        fileName: "app/root.jsx",
+        lineNumber: 25,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("body", {
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("header", {
-            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(MainNavigation_default, {})
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Outlet, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.ScrollRestoration, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Scripts, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.LiveReload, {})
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("header", {
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(MainNavigation_default, {}, void 0, !1, {
+              fileName: "app/root.jsx",
+              lineNumber: 31,
+              columnNumber: 11
+            }, this)
+          }, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 30,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Outlet, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 33,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.ScrollRestoration, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 34,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Scripts, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 35,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.LiveReload, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 36,
+            columnNumber: 9
+          }, this)
         ]
-      })
+      }, void 0, !0, {
+        fileName: "app/root.jsx",
+        lineNumber: 29,
+        columnNumber: 7
+      }, this)
     ]
-  });
+  }, void 0, !0, {
+    fileName: "app/root.jsx",
+    lineNumber: 24,
+    columnNumber: 5
+  }, this);
 }
 function CatchBoundary({ error }) {
   var _a;
   let caughtResponse = (0, import_react3.useCatch)();
-  return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("html", {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("html", {
     lang: "en",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("head", {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("head", {
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Meta, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Links, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("title", {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Meta, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 47,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Links, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 48,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("title", {
             children: caughtResponse.statusText
-          })
+          }, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 49,
+            columnNumber: 9
+          }, this)
         ]
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("body", {
+      }, void 0, !0, {
+        fileName: "app/root.jsx",
+        lineNumber: 46,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("body", {
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("header", {
-            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(MainNavigation_default, {})
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("main", {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("header", {
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(MainNavigation_default, {}, void 0, !1, {
+              fileName: "app/root.jsx",
+              lineNumber: 53,
+              columnNumber: 11
+            }, this)
+          }, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 52,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("main", {
             className: "error",
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h1", {
+              /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", {
                 children: caughtResponse.statusText
-              }),
-              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("p", {
+              }, void 0, !1, {
+                fileName: "app/root.jsx",
+                lineNumber: 56,
+                columnNumber: 11
+              }, this),
+              /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", {
                 children: ((_a = caughtResponse.data) == null ? void 0 : _a.message) || "Something went wrong."
-              }),
-              /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("p", {
+              }, void 0, !1, {
+                fileName: "app/root.jsx",
+                lineNumber: 57,
+                columnNumber: 11
+              }, this),
+              /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", {
                 children: [
                   "Back to ",
-                  /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Link, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Link, {
                     to: "/",
                     children: "safety"
-                  }),
+                  }, void 0, !1, {
+                    fileName: "app/root.jsx",
+                    lineNumber: 59,
+                    columnNumber: 21
+                  }, this),
                   "!"
                 ]
-              })
+              }, void 0, !0, {
+                fileName: "app/root.jsx",
+                lineNumber: 58,
+                columnNumber: 11
+              }, this)
             ]
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.ScrollRestoration, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Scripts, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.LiveReload, {})
+          }, void 0, !0, {
+            fileName: "app/root.jsx",
+            lineNumber: 55,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.ScrollRestoration, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 62,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Scripts, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 63,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.LiveReload, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 64,
+            columnNumber: 9
+          }, this)
         ]
-      })
+      }, void 0, !0, {
+        fileName: "app/root.jsx",
+        lineNumber: 51,
+        columnNumber: 7
+      }, this)
     ]
-  });
+  }, void 0, !0, {
+    fileName: "app/root.jsx",
+    lineNumber: 45,
+    columnNumber: 5
+  }, this);
 }
 function ErrorBoundary({ error }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("html", {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("html", {
     lang: "en",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("head", {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("head", {
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Meta, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Links, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("title", {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Meta, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 74,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Links, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 75,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("title", {
             children: "An error occured."
-          })
+          }, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 76,
+            columnNumber: 9
+          }, this)
         ]
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("body", {
+      }, void 0, !0, {
+        fileName: "app/root.jsx",
+        lineNumber: 73,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("body", {
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("header", {
-            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(MainNavigation_default, {})
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("main", {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("header", {
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(MainNavigation_default, {}, void 0, !1, {
+              fileName: "app/root.jsx",
+              lineNumber: 80,
+              columnNumber: 11
+            }, this)
+          }, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 79,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("main", {
             className: "error",
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h1", {
+              /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", {
                 children: "An error occured."
-              }),
-              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("p", {
+              }, void 0, !1, {
+                fileName: "app/root.jsx",
+                lineNumber: 83,
+                columnNumber: 11
+              }, this),
+              /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", {
                 children: error.message
-              }),
-              /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("p", {
+              }, void 0, !1, {
+                fileName: "app/root.jsx",
+                lineNumber: 84,
+                columnNumber: 11
+              }, this),
+              /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", {
                 children: [
                   "Back to ",
-                  /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Link, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Link, {
                     to: "/",
                     children: "safetyssss"
-                  }),
+                  }, void 0, !1, {
+                    fileName: "app/root.jsx",
+                    lineNumber: 86,
+                    columnNumber: 21
+                  }, this),
                   "!"
                 ]
-              })
+              }, void 0, !0, {
+                fileName: "app/root.jsx",
+                lineNumber: 85,
+                columnNumber: 11
+              }, this)
             ]
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.ScrollRestoration, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.Scripts, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react3.LiveReload, {})
+          }, void 0, !0, {
+            fileName: "app/root.jsx",
+            lineNumber: 82,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.ScrollRestoration, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 89,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Scripts, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 90,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.LiveReload, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 91,
+            columnNumber: 9
+          }, this)
         ]
-      })
+      }, void 0, !0, {
+        fileName: "app/root.jsx",
+        lineNumber: 78,
+        columnNumber: 7
+      }, this)
     ]
-  });
+  }, void 0, !0, {
+    fileName: "app/root.jsx",
+    lineNumber: 72,
+    columnNumber: 5
+  }, this);
 }
 function links() {
   return [{ rel: "stylesheet", href: main_default }];
@@ -293,34 +497,58 @@ function storeNotes(notes) {
 }
 
 // app/styles/noteDetails.css
-var noteDetails_default = "/build/_assets/noteDetails-36A3ULZZ.css";
+var noteDetails_default = "/build/_assets/noteDetails-2HPYKR2M.css";
 
 // app/routes/notes.$noteId.jsx
-var import_jsx_runtime4 = require("react/jsx-runtime");
+var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime");
 function NoteDetailsPage() {
   let note = (0, import_react4.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("main", {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("main", {
     id: "note-details",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("header", {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("header", {
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("nav", {
-            children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_react_router_dom.Link, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("nav", {
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react_router_dom.Link, {
               to: "/notes",
               children: "Back to all Notes"
-            })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h1", {
+            }, void 0, !1, {
+              fileName: "app/routes/notes.$noteId.jsx",
+              lineNumber: 17,
+              columnNumber: 11
+            }, this)
+          }, void 0, !1, {
+            fileName: "app/routes/notes.$noteId.jsx",
+            lineNumber: 16,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("h1", {
             children: note.title
-          })
+          }, void 0, !1, {
+            fileName: "app/routes/notes.$noteId.jsx",
+            lineNumber: 19,
+            columnNumber: 9
+          }, this)
         ]
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", {
+      }, void 0, !0, {
+        fileName: "app/routes/notes.$noteId.jsx",
+        lineNumber: 15,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("p", {
         id: "note-details-content",
         children: note.content
-      })
+      }, void 0, !1, {
+        fileName: "app/routes/notes.$noteId.jsx",
+        lineNumber: 21,
+        columnNumber: 7
+      }, this)
     ]
-  });
+  }, void 0, !0, {
+    fileName: "app/routes/notes.$noteId.jsx",
+    lineNumber: 14,
+    columnNumber: 5
+  }, this);
 }
 async function loader({ params }) {
   let notes = await getStoredNotes(), noteId = params.noteId, selectedNote = notes.find((note) => note.id === noteId);
@@ -352,29 +580,49 @@ __export(routes_exports, {
 var import_react5 = require("@remix-run/react");
 
 // app/styles/home.css
-var home_default = "/build/_assets/home-UML5FHT4.css";
+var home_default = "/build/_assets/home-RFAOEFSG.css";
 
 // app/routes/index.jsx
-var import_jsx_runtime5 = require("react/jsx-runtime");
+var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
 function Index() {
-  return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("main", {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("main", {
     id: "content",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h1", {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h1", {
         children: "A better way of keeping track of your notes"
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", {
+      }, void 0, !1, {
+        fileName: "app/routes/index.jsx",
+        lineNumber: 8,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", {
         children: "Try our early beta and never loose track of your notes again!"
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", {
+      }, void 0, !1, {
+        fileName: "app/routes/index.jsx",
+        lineNumber: 9,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", {
         id: "cta",
-        children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(import_react5.Link, {
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react5.Link, {
           to: "/notes",
           children: "Try Now!"
-        })
-      })
+        }, void 0, !1, {
+          fileName: "app/routes/index.jsx",
+          lineNumber: 11,
+          columnNumber: 9
+        }, this)
+      }, void 0, !1, {
+        fileName: "app/routes/index.jsx",
+        lineNumber: 10,
+        columnNumber: 7
+      }, this)
     ]
-  });
+  }, void 0, !0, {
+    fileName: "app/routes/index.jsx",
+    lineNumber: 7,
+    columnNumber: 5
+  }, this);
 }
 function links3() {
   return [{ rel: "stylesheet", href: home_default }];
@@ -397,56 +645,96 @@ var import_node3 = require("@remix-run/node"), import_react8 = require("@remix-r
 var import_react6 = require("@remix-run/react");
 
 // app/components/Notes/NewNote.css
-var NewNote_default = "/build/_assets/NewNote-N3P7GNET.css";
+var NewNote_default = "/build/_assets/NewNote-VBSZYCS5.css";
 
 // app/components/Notes/NewNote.jsx
-var import_jsx_runtime6 = require("react/jsx-runtime");
+var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime");
 function NewNote() {
   let data = (0, import_react6.useActionData)(), isSubmitting = (0, import_react6.useTransition)().state === "submitting";
-  return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(import_react6.Form, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Form, {
     method: "post",
     id: "note-form",
     children: [
-      (data == null ? void 0 : data.message) && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", {
+      (data == null ? void 0 : data.message) && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", {
         children: data.message
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("p", {
+      }, void 0, !1, {
+        fileName: "app/components/Notes/NewNote.jsx",
+        lineNumber: 17,
+        columnNumber: 25
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", {
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("label", {
             htmlFor: "title",
             children: "Title"
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("input", {
+          }, void 0, !1, {
+            fileName: "app/components/Notes/NewNote.jsx",
+            lineNumber: 19,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("input", {
             type: "text",
             id: "title",
             name: "title",
             required: !0
-          })
+          }, void 0, !1, {
+            fileName: "app/components/Notes/NewNote.jsx",
+            lineNumber: 20,
+            columnNumber: 9
+          }, this)
         ]
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("p", {
+      }, void 0, !0, {
+        fileName: "app/components/Notes/NewNote.jsx",
+        lineNumber: 18,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", {
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("label", {
             htmlFor: "content",
             children: "Content"
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("textarea", {
+          }, void 0, !1, {
+            fileName: "app/components/Notes/NewNote.jsx",
+            lineNumber: 23,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("textarea", {
             id: "content",
             name: "content",
             rows: "5",
             required: !0
-          })
+          }, void 0, !1, {
+            fileName: "app/components/Notes/NewNote.jsx",
+            lineNumber: 24,
+            columnNumber: 9
+          }, this)
         ]
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", {
+      }, void 0, !0, {
+        fileName: "app/components/Notes/NewNote.jsx",
+        lineNumber: 22,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", {
         className: "form-actions",
-        children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", {
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("button", {
           disabled: isSubmitting,
           children: isSubmitting ? "Adding..." : "Add Note"
-        })
-      })
+        }, void 0, !1, {
+          fileName: "app/components/Notes/NewNote.jsx",
+          lineNumber: 27,
+          columnNumber: 9
+        }, this)
+      }, void 0, !1, {
+        fileName: "app/components/Notes/NewNote.jsx",
+        lineNumber: 26,
+        columnNumber: 7
+      }, this)
     ]
-  });
+  }, void 0, !0, {
+    fileName: "app/components/Notes/NewNote.jsx",
+    lineNumber: 16,
+    columnNumber: 5
+  }, this);
 }
 var NewNote_default2 = NewNote;
 function links4() {
@@ -457,32 +745,36 @@ function links4() {
 var import_react7 = require("@remix-run/react");
 
 // app/components/Notes/NoteList.css
-var NoteList_default = "/build/_assets/NoteList-4M2RDIJ7.css";
+var NoteList_default = "/build/_assets/NoteList-DD6UFPFN.css";
 
 // app/components/Notes/NoteList.jsx
-var import_jsx_runtime7 = require("react/jsx-runtime");
+var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
 function NoteList({ notes }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("ul", {
     id: "note-list",
-    children: notes.map((note, index) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", {
+    children: notes.map((note, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", {
       className: "note",
-      children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(import_react7.Link, {
+      children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.Link, {
         to: note.id,
-        children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("article", {
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("article", {
           children: [
-            /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("header", {
+            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("header", {
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("ul", {
+                /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("ul", {
                   className: "note-meta",
                   children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("li", {
+                    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", {
                       children: [
                         "#",
                         index + 1
                       ]
-                    }),
-                    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", {
-                      children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("time", {
+                    }, void 0, !0, {
+                      fileName: "app/components/Notes/NoteList.jsx",
+                      lineNumber: 13,
+                      columnNumber: 19
+                    }, this),
+                    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", {
+                      children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("time", {
                         dateTime: note.id,
                         children: new Date(note.id).toLocaleDateString("en-US", {
                           day: "numeric",
@@ -491,23 +783,63 @@ function NoteList({ notes }) {
                           hour: "2-digit",
                           minute: "2-digit"
                         })
-                      })
-                    })
+                      }, void 0, !1, {
+                        fileName: "app/components/Notes/NoteList.jsx",
+                        lineNumber: 15,
+                        columnNumber: 21
+                      }, this)
+                    }, void 0, !1, {
+                      fileName: "app/components/Notes/NoteList.jsx",
+                      lineNumber: 14,
+                      columnNumber: 19
+                    }, this)
                   ]
-                }),
-                /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", {
+                }, void 0, !0, {
+                  fileName: "app/components/Notes/NoteList.jsx",
+                  lineNumber: 12,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("h2", {
                   children: note.title
-                })
+                }, void 0, !1, {
+                  fileName: "app/components/Notes/NoteList.jsx",
+                  lineNumber: 26,
+                  columnNumber: 17
+                }, this)
               ]
-            }),
-            /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", {
+            }, void 0, !0, {
+              fileName: "app/components/Notes/NoteList.jsx",
+              lineNumber: 11,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", {
               children: note.content
-            })
+            }, void 0, !1, {
+              fileName: "app/components/Notes/NoteList.jsx",
+              lineNumber: 28,
+              columnNumber: 15
+            }, this)
           ]
-        })
-      })
-    }, note.id))
-  });
+        }, void 0, !0, {
+          fileName: "app/components/Notes/NoteList.jsx",
+          lineNumber: 10,
+          columnNumber: 13
+        }, this)
+      }, void 0, !1, {
+        fileName: "app/components/Notes/NoteList.jsx",
+        lineNumber: 9,
+        columnNumber: 11
+      }, this)
+    }, note.id, !1, {
+      fileName: "app/components/Notes/NoteList.jsx",
+      lineNumber: 8,
+      columnNumber: 9
+    }, this))
+  }, void 0, !1, {
+    fileName: "app/components/Notes/NoteList.jsx",
+    lineNumber: 6,
+    columnNumber: 5
+  }, this);
 }
 var NoteList_default2 = NoteList;
 function links5() {
@@ -515,17 +847,29 @@ function links5() {
 }
 
 // app/routes/notes.jsx
-var import_jsx_runtime8 = require("react/jsx-runtime");
+var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
 function NotesPage() {
   let notes = (0, import_react8.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("main", {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("main", {
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(NewNote_default2, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(NoteList_default2, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(NewNote_default2, {}, void 0, !1, {
+        fileName: "app/routes/notes.jsx",
+        lineNumber: 11,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(NoteList_default2, {
         notes
-      })
+      }, void 0, !1, {
+        fileName: "app/routes/notes.jsx",
+        lineNumber: 12,
+        columnNumber: 7
+      }, this)
     ]
-  });
+  }, void 0, !0, {
+    fileName: "app/routes/notes.jsx",
+    lineNumber: 10,
+    columnNumber: 5
+  }, this);
 }
 async function loader2() {
   let notes = await getStoredNotes();
@@ -560,42 +904,74 @@ function meta3() {
 function CatchBoundary2() {
   var _a;
   let message = ((_a = (0, import_react8.useCatch)().data) == null ? void 0 : _a.message) || "Data not found.";
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("main", {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("main", {
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(NewNote_default2, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(NewNote_default2, {}, void 0, !1, {
+        fileName: "app/routes/notes.jsx",
+        lineNumber: 68,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", {
         className: "info-message",
         children: message
-      })
+      }, void 0, !1, {
+        fileName: "app/routes/notes.jsx",
+        lineNumber: 69,
+        columnNumber: 7
+      }, this)
     ]
-  });
+  }, void 0, !0, {
+    fileName: "app/routes/notes.jsx",
+    lineNumber: 67,
+    columnNumber: 5
+  }, this);
 }
 function ErrorBoundary2({ error }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("main", {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("main", {
     className: "error",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h1", {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("h1", {
         children: "An error related to your notes occurred!"
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", {
+      }, void 0, !1, {
+        fileName: "app/routes/notes.jsx",
+        lineNumber: 77,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", {
         children: error.message
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("p", {
+      }, void 0, !1, {
+        fileName: "app/routes/notes.jsx",
+        lineNumber: 78,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", {
         children: [
           "Back to ",
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(import_react8.Link, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Link, {
             to: "/",
             children: "safety"
-          }),
+          }, void 0, !1, {
+            fileName: "app/routes/notes.jsx",
+            lineNumber: 80,
+            columnNumber: 17
+          }, this),
           "!"
         ]
-      })
+      }, void 0, !0, {
+        fileName: "app/routes/notes.jsx",
+        lineNumber: 79,
+        columnNumber: 7
+      }, this)
     ]
-  });
+  }, void 0, !0, {
+    fileName: "app/routes/notes.jsx",
+    lineNumber: 76,
+    columnNumber: 5
+  }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "907695fa", entry: { module: "/build/entry.client-QEJ47S7R.js", imports: ["/build/_shared/chunk-NW3OSAR6.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-4AKALU7C.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-DLCVKSGW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes": { id: "routes/notes", parentId: "root", path: "notes", index: void 0, caseSensitive: void 0, module: "/build/routes/notes-BUUE4H2D.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/notes.$noteId": { id: "routes/notes.$noteId", parentId: "root", path: "notes/:noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.$noteId-FKVPWPJ5.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-907695FA.js" };
+var assets_manifest_default = { version: "72f21cde", entry: { module: "/build/entry.client-AZLE4DZC.js", imports: ["/build/_shared/chunk-JWJHJQYF.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FU6TPVWJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-J3CVCMBF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes": { id: "routes/notes", parentId: "root", path: "notes", index: void 0, caseSensitive: void 0, module: "/build/routes/notes-VDXRGP3G.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/notes.$noteId": { id: "routes/notes.$noteId", parentId: "root", path: "notes/:noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.$noteId-EA3RZUJN.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-72F21CDE.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_meta: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -641,3 +1017,4 @@ var assetsBuildDirectory = "public/build", future = { v2_meta: !1 }, publicPath 
   publicPath,
   routes
 });
+//# sourceMappingURL=index.js.map

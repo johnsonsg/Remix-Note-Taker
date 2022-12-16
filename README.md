@@ -1,5 +1,8 @@
 # Welcome to Remix!
 
+You can view the crash course here:
+https://www.youtube.com/watch?v=RBYJTop1e-g
+
 - [Remix Docs](https://remix.run/docs)
 
 ## Development
